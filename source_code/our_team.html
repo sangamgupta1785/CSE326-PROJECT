@@ -7,6 +7,86 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main_style.css">
     <link rel="icon"  type="image" href="Assets/favicon-16x16.png">
+    <style>
+      main p{
+        text-align: center;
+    margin-bottom: 10px;
+      }
+      main h2{
+  
+    text-align: center;
+    margin-top: 30px;
+    color: #4CAF50;
+
+      }
+      #team {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #4CAF50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Become a Member Button */
+.cta-container {
+    margin-top: 40px;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #e64a19;
+    color: black;
+}
+.team-member img{
+  height: 200px ;
+  width: 200px;
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -24,6 +104,65 @@
           <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
         </nav>
       </header>
+      <main>
+        <section id="team">
+          <h2>Meet Our Team</h2>
+          <p>We are a group of passionate individuals working together to create a positive impact in the world.</p>
+  
+          <div class="team-container">
+              <!-- Team Member 1 -->
+              <div class="team-member">
+                  <img src="Assets/hero-bg.jpg" alt="John Doe - CEO" class="team-photo">
+                  <h3>Sangam Gupta</h3>
+                  <p  style="font-weight: 900;">CEO & Founder</p>
+                  <p>Sangam has dedicated his life to helping the underprivileged and ensuring that every person gets an opportunity to succeed in life.</p>
+              </div>
+  
+              <!-- Team Member 2 -->
+              <div class="team-member">
+                  <img src="team2.jpg" alt="Jane Smith - Program Director" class="team-photo">
+                  <h3>Jane Smith</h3>
+                  <p>Program Director</p>
+                  <p>Jane oversees all the programs at Hand of Hopes, making sure that our initiatives reach those who need them the most.</p>
+              </div>
+  
+              <!-- Team Member 3 -->
+              <div class="team-member">
+                  <img src="team3.jpg" alt="Samuel Green - Head of Operations" class="team-photo">
+                  <h3>Samuel Green</h3>
+                  <p>Head of Operations</p>
+                  <p>Samuel ensures the smooth functioning of all our projects and manages resources to maximize impact on the ground.</p>
+              </div>
+  
+              <!-- Team Member 4 -->
+              <div class="team-member">
+                  <img src="team4.jpg" alt="Lisa Brown - Volunteer Coordinator" class="team-photo">
+                  <h3>Lisa Brown</h3>
+                  <p>Volunteer Coordinator</p>
+                  <p>Lisa connects our volunteers with the right opportunities to make the biggest difference in the lives of others.</p>
+              </div>
+  
+              <!-- Team Member 5 -->
+              <div class="team-member">
+                  <img src="team5.jpg" alt="Michael Adams - Outreach Manager" class="team-photo">
+                  <h3>Michael Adams</h3>
+                  <p>Outreach Manager</p>
+                  <p>Michael is the driving force behind our outreach efforts, ensuring that our message of hope spreads far and wide.</p>
+              </div>
+              <div class="team-member">
+                <img src="team6.jpg" alt="Emily Johnson - Fundraising Manager" class="team-photo">
+                <h3>Emily Johnson</h3>
+                <p>Fundraising Manager</p>
+                <p>Emily leads our fundraising efforts, working tirelessly to secure the resources we need to continue transforming lives. She is passionate about building relationships with donors and organizing impactful campaigns.</p>
+            </div>
+          </div>
+  
+          <!-- Become a Member Button -->
+          <div class="cta-container">
+              <a href="join_us.html" class="join-button">Join Us Today & Make a Difference!</a>
+          </div>
+      </section>
+      </main>
       <footer class="footer">
         <div class="container">
           <!-- Footer Sections -->
