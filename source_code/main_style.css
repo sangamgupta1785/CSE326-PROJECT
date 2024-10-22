@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*css for our-mission*/
+/* Mission Section Styling */
+/* .mission-section { */
+/* background-color: #fff;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mission Content Layout */
+
+/* Responsive Design */
+/*@media (max-width: 768px) {
+  .mission-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .mission-title {
+    font-size: 28px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.what-we-do {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+
+}
+
+.what-we-do h2 {
+  font-size: 3rem;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* height: 50vh; */
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* height: 50px; */
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.grid-item h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5em;
+}
+
+.grid-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}
+
+button {
+  /* background: #C06B3E; */
+  background: black;
+}
+
+.our-mission {
+  height: 80vh;
+  background-image: url(Assets/smiley-little-boy-isolated-pink.jpg);
+  /* background-position: center; */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.our-mission .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+}
+
+.our-mission h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+  /* text-align: center; */
+  padding: 40px;
+  color: black;
+}
+
+.our-mission p {
+  font-size: 1em;
+  color: black;
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+/* css for Stories */
+/* Overall section styling */
+.stories-of-hope {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading Section */
+.heading-section {
+  margin-bottom: 30px;
+}
+
+.heading-section .heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.heading-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Each Story */
+.story {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.story:hover {
+  transform: scale(1.02);
+}
+
+.story img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.story-caption {
+  padding: 20px;
+}
+
+.story-caption h5 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.story-caption p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heading-section .heading {
+    font-size: 28px;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* css for get involved section*/
+/* Section Styling */
+.how-you-can-help {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Centered Heading */
+.heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Help Options Styling */
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+}
+
+/* Clickbait Button Styling */
+.help-button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.help-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.help-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .help-button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+/* css for your-donation-matters */
+/* Section Styling */
+.your-donations-matter {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Donation Content Layout */
+.donation-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donation-text {
+  max-width: 60%;
+  text-align: left;
+}
+
+.heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.donation-text p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.donation-text em {
+  font-size: 20px;
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+/* Donate Button Styling */
+.donation-button {
+  display: flex;
+  align-items: center;
+}
+
+.donate-button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.donate-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .donation-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donation-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .donate-button {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}

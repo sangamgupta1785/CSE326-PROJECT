@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us | Hand Of Hopes- A NGO website </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="main_style.css"> -->
+  <link rel="icon"  type="image" href="Assets/favicon-16x16.png">
+  <style>
+    /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+} */
+
+    .container_form {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      margin-top: 20px;
+      margin-left: 445px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #2980b9;
+    }
+
+    .submit-btn {
+      padding: 12px;
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #3498db;
+    }
+
+    @media (max-width: 600px) {
+      .container_form {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="home.html">Hand Of Hopes<span></span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reach_us.html">Reach us</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+  <div class="join_form">
+
+    <div class="container_form">
+      <h2>Become a Changemaker with Hand of Hopes!</h2>
+      <p>Join us in making the world a better place. Fill out the form below to start your journey of service and
+        compassion.</p>
+
+      <form action="submit-form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills and Expertise *</label>
+          <textarea id="skills" name="skills" rows="3" placeholder="e.g., Teaching, Fundraising, Event Management"
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address *</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="availability">Availability *</label>
+          <input type="text" id="availability" name="availability" placeholder="e.g., 10 hours per week, evenings"
+            required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Sections -->
+      <div class="footer-content">
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-contact">
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:info@handofhopes.org">info@handofhopes.org</a></p>
+          <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+          <p>Address: 123 Hope Street, City, Country</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="Assets/facebook_icon_137647.png"
+                alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="Assets/instagram-black_100099.png"
+                alt="Instagram"></a>
+            <a href="https://youtub.com" target="_blank"><img src="Assets/youtube.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-bottom">
+        <p>© 2024 <a href="home.html">Hand of Hopes</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Hand Of Hopes- A NGO website </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"  type="image" href="Assets/favicon-16x16.png">
+  <link rel="stylesheet" href="main_style.css">
+  <style>
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    /* padding: 20px; */
+}
+
+.container_donate {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.container_donate p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2980b9;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3498db;
+}
+
+.impact-section, .tax-benefits, .faqs {
+    margin-bottom: 30px;
+}
+
+.impact-section ul, .faqs ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.impact-section ul li, .faqs ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .container_donate {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="home.html">Hand Of Hopes<span></span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reach_us.html">Reach us</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container_donate">
+      <h2>Make a Difference – Donate Now!</h2>
+      <p>Your support helps us provide food, shelter, education, and care to those in need. Every contribution counts!</p>
+
+      <!-- Donation Form -->
+      <div class="donation-section">
+          <h3>Monetary Donations</h3>
+          <form action="submit-donation.php" method="POST">
+              <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="amount">Donation Amount (₹) *</label>
+                  <input type="number" id="amount" name="amount" placeholder="e.g., 500" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="message">Message (Optional)</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your message or reason for donation"></textarea>
+              </div>
+
+              <div class="form-group">
+                  <button type="submit" class="submit-btn">Donate Now</button>
+              </div>
+          </form>
+      </div>
+
+      <!-- Blood Donation Section -->
+      <div class="blood-donation-section">
+          <h3>Blood Donation</h3>
+          <p>Donate blood and save lives. Please fill out the form below to schedule your blood donation with us.</p>
+
+          <form action="submit-blood-donation.php" method="POST">
+              <div class="form-group">
+                  <label for="blood-name">Full Name *</label>
+                  <input type="text" id="blood-name" name="blood-name" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="blood-email">Email *</label>
+                  <input type="email" id="blood-email" name="blood-email" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="blood-phone">Phone Number *</label>
+                  <input type="tel" id="blood-phone" name="blood-phone" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="blood-group">Blood Group *</label>
+                  <select id="blood-group" name="blood-group" required>
+                      <option value="" disabled selected>Select your blood group</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <label for="date">Preferred Donation Date *</label>
+                  <input type="date" id="date" name="date" required>
+              </div>
+
+              <div class="form-group">
+                  <button type="submit" class="submit-btn">Register for Blood Donation</button>
+              </div>
+          </form>
+      </div>
+
+      <!-- Tax Benefits Information -->
+      <div class="tax-benefits">
+          <h3>Tax Benefits</h3>
+          <p>Your donations are eligible for tax deductions under Section 80G. Make sure to claim your tax exemption by generating the receipt after your donation.</p>
+      </div>
+
+      <!-- Impact Section -->
+      <div class="impact-section">
+          <h3>Your Impact</h3>
+          <p>Thanks to your generosity, we have been able to provide meals, shelter, and education to thousands of people. Here’s what your donation can achieve:</p>
+          <ul>
+              <li>₹500 can provide meals for 10 children for a day.</li>
+              <li>₹1000 can fund the education of a child for a month.</li>
+              <li>₹5000 can shelter a homeless family for a month.</li>
+          </ul>
+      </div>
+
+      <!-- FAQs Section -->
+      <div class="faqs">
+          <h3>Frequently Asked Questions</h3>
+          <ul>
+              <li><strong>How is my donation used?</strong> Your donation directly supports the programs and services provided by Hand of Hopes, including feeding the hungry, educating underprivileged children, and providing shelter to the homeless.</li>
+              <li><strong>Will I receive a receipt?</strong> Yes, a receipt will be emailed to you after your donation.</li>
+              <li><strong>Can I donate items instead of money?</strong> Yes, you can donate books, clothes, and essentials at our donation centers.</li>
+          </ul>
+      </div>
+
+  </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Sections -->
+      <div class="footer-content">
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-contact">
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:info@handofhopes.org">info@handofhopes.org</a></p>
+          <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+          <p>Address: 123 Hope Street, City, Country</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="Assets/facebook_icon_137647.png"
+                alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="Assets/instagram-black_100099.png"
+                alt="Instagram"></a>
+            <a href="https://youtub.com" target="_blank"><img src="Assets/youtube.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-bottom">
+        <p>© 2024 <a href="home.html">Hand of Hopes</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

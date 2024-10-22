@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reach Us | Hand Of Hopes- A NGO website </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main_style.css">
+  <link rel="icon"  type="image" href="Assets/favicon-16x16.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+
+    }
+
+    .container_reach {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .container_reach h2,
+    h3 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+   .container_reach p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+  .container_reach  a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    /* a:hover {
+      text-decoration: underline;
+    } */
+
+    .contact-form,
+    .location-map,
+    .social-media,
+    .newsletter-signup,
+    .faqs {
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #2980b9;
+    }
+
+    .submit-btn {
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #3498db;
+    }
+
+    .social-media {
+      text-align: center;
+    }
+
+    .social-media a {
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    .faqs ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .faqs ul li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container_reach {
+        padding: 20px;
+      }
+
+      h2,
+      h3 {
+        font-size: 1.6em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      a {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="home.html">Hand Of Hopes<span></span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reach_us.html">Reach us</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+  <div class="container_reach">
+    <!-- Reach Us Section -->
+    <section class="reach-us">
+      <h2>Reach Us</h2>
+      <p>We'd love to hear from you! Whether you have a question, want to volunteer, or need more information about our
+        work, feel free to reach out to us.</p>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Our Office</h3>
+        <p><strong>Address:</strong> 123 Hope Street, New Delhi, India</p>
+        <p><strong>Phone:</strong> +91-9876543210</p>
+        <p><strong>Email:</strong> <a href="mailto:info@handofhopes.org">info@handofhopes.org</a></p>
+        <p><strong>Working Hours:</strong> Monday - Saturday, 9 AM - 6 PM</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Get In Touch</h3>
+        <form action="submit-contact.php" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Location Map -->
+      <div class="location-map">
+        <h3>Our Location</h3>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9872593792766!2d75.70229287539478!3d31.255392074336367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e1!3m2!1sen!2sin!4v1729016249610!5m2!1sen!2sin"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      
+      <!-- Social Media Links -->
+
+      <!-- Optional Newsletter Signup -->
+
+
+      <!-- FAQ Section -->
+      <div class="faqs">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+          <li><strong>How can I volunteer?</strong> Reach out to us via the contact form or visit our office for more
+            information on how you can contribute.</li>
+          <li><strong>How can I donate items?</strong> You can bring books, clothes, food, and essentials to our office,
+            or contact us to arrange a pickup.</li>
+          <li><strong>Can I visit your office?</strong> Yes, you are welcome to visit our office during working hours to
+            learn more about our work.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Sections -->
+      <div class="footer-content">
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-contact">
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:info@handofhopes.org">info@handofhopes.org</a></p>
+          <p>Phone: <a href="tel:+917233818225">+91 72338 18225</a></p>
+          <p>Address: Delhi-GT Road ,Phagwara, Jalandhar,Punjab </p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="Assets/facebook_icon_137647.png"
+                alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="Assets/instagram-black_100099.png"
+                alt="Instagram"></a>
+            <a href="https://youtub.com" target="_blank"><img src="Assets/youtube.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-bottom">
+        <p>© 2024 <a href="home.html">Hand of Hopes</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

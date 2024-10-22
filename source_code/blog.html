@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Hand Of Hopes- A NGO website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image" href="Assets/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background: #ecececdb;
+        }
+
+        .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 1250px;
+            margin: 15px auto;
+            padding: 20px;
+            gap: 20px;
+            /* height: 100vh; */
+        }
+
+        .card-list .card-item {
+            background: #fff;
+            padding: 26px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+            list-style: none;
+            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: border 0.5s ease;
+        }
+
+        .card-list .card-item:hover {
+            border: 2px solid #000;
+        }
+
+        .card-list .card-item img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-list span {
+            display: inline-block;
+            background: #F7DFF5;
+            margin-top: 32px;
+            padding: 8px 15px;
+            font-size: 0.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .card-list .developer {
+            background-color: #F7DFF5;
+            color: #B22485;
+        }
+
+        .card-list .designer {
+            background-color: #d1e8ff;
+            color: #2968a8;
+        }
+
+        .card-list .editor {
+            background-color: #d6f8d6;
+            color: #205c20;
+        }
+
+        .card-item h3 {
+            color: #000;
+            font-size: 1.438rem;
+            margin-top: 28px;
+            font-weight: 600;
+        }
+
+        /* .card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+} */
+ .blanck{
+    height: 20vh;
+ }
+
+        /* .card-list .card-item:hover .arrow {
+            background: #000;
+            color: #fff;
+        } */
+
+        @media (max-width: 1200px) {
+            .card-list .card-item {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+            .card-list {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="home.html">Hand Of Hopes<span></span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="our_team.html">Our Team</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reach_us.html">Reach us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+    <div class="card-list">
+        <a href="#" class="card-item">
+            <img src="Assets/high-angle-friends-showing-hands-camera.jpg" alt="Card Image">
+            <!-- <span class="developer">Developer</span> -->
+            <h3>How Hand of Hopes is Transforming Lives: Empowering Communities through Education, Shelter, and Care.</h3>
+
+        </a>
+        <a href="#" class="card-item">
+            <img src="Assets/charity-foodbank-volunteer-group.jpg" alt="Card Image">
+            <!-- <span class="designer">Designer</span> -->
+            <h3>The Power of Giving: How Your Donations Fuel Hand of Hopes' Mission to Support the Needy.</h3>
+        </a>
+        <a href="#" class="card-item">
+            <img src="Assets/young-child-spending-time-together-comfort-their-home.jpg" alt="Card Image">
+            <!-- <span class="editor">Editor</span> -->
+            <h3>Stories of Change: Meet the Lives Touched by Hand of Hopes' Feeding and Shelter Programs.</h3>
+
+        </a>
+    </div>
+    <div class="blanck">
+
+    </div>
+ 
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Sections -->
+            <div class="footer-content">
+                <!-- Quick Links Section -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <p>Email: <a href="mailto:info@handofhopes.org">info@handofhopes.org</a></p>
+                    <p>Phone: <a href="tel:+917233818225">+91 72338 18225</a></p>
+                    <p>Address: Delhi-GT Road ,Phagwara, Jalandhar,Punjab </p>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="Assets/facebook_icon_137647.png"
+                                alt="Facebook"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="Assets/instagram-black_100099.png"
+                                alt="Instagram"></a>
+                        <a href="https://youtube.com" target="_blank"><img src="Assets/youtube.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>© 2024 <a href="home.html">Hand of Hopes</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
